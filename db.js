@@ -1,20 +1,6 @@
-/**
- * Created by Administrator on 2018/3/6 0006.
- *
-
-
-
-
-
- *
- */
-
-//http://mongodb.github.io/node-mongodb-native/3.0/quick-start/quick-start/
 
 var mongodb = require('mongodb');
 var MongoClient = mongodb.MongoClient;
-
-
 var ObjectId = mongodb.ObjectId;
 
 var dbUrl = 'mongodb://localhost:27017/';
@@ -133,8 +119,6 @@ exports.insert=function(collectionName,json,cb){
 
 /*
  DB.update('user',{},{},function(){
-
-
  })
 * */
 exports.update=function(collectionName,json1,json2,cb){
